@@ -48,8 +48,6 @@ Thumbs.db
 
 # Custom #
 ######################
-*Thinkstock*
 build
-graphics
+dist
 node_modules
-report.txt
