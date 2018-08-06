@@ -8,6 +8,17 @@ const uglify = require('gulp-uglify');
 // const argv = require('yargs').argv;
 const del = require('del');
 
+const sass = require('gulp-sass');
+
+// --------------------------------------------------------
+// HTML
+// --------------------------------------------------------
+
+gulp.task('html', ()=> {
+	return gulp.src('./src/index.html')
+		.pipe( gulp.dest('./build/') )
+})
+
 // --------------------------------------------------------
 // JS
 // --------------------------------------------------------
@@ -43,14 +54,22 @@ gulp.task('js', ()=> {
 
 gulp.task('watch', ()=>{
 	gulp.watch('./src/js/**/*.js', ['js'])
+	gulp.watch('./src/index.html', ['html'])
 })
+
+gulp.task('default', ['watch'])
 
 
 // --------------------------------------------------------
 // STYLE
 // --------------------------------------------------------
 
-// gulp.task('compile-css', ()=> {
-// 	return gulp.src('src/sass/*.+(scss|sass)')
-// 		.pipe()
+// gulp.task('css', ()=> {
+// 	return gulp.src('src/style/*.+(scss|sass)')
+// 		.pipe( sass().on('error', sass.logError) )
+// 		.pipe( gulp.dest('./build/css') )
 // })
+
+
+
+
