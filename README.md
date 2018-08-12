@@ -1,5 +1,7 @@
 # Ben's Gulp Template
 
+A modification of [this template](https://github.com/philsinatra/IDM-T380/tree/master/examples/05-build_systems).
+
 ### Features
 - js linting (fixes basic syntax automatically)
 - es6 & sass compilation to vanilla js & css
@@ -36,7 +38,7 @@ gulp css
 ### File Structure
 
 ```
-./gulp-template/
+gulp-template/
 │   README.md
 │   gulpfile.js
 │   etc...
