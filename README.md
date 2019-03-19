@@ -48,8 +48,6 @@ gulp-template/
 │   │
 │   └───assets
 │       └───fonts
-│           └───Khula-light
-|                  etc...
 │       │
 │   └───css
 │       │   main.min.css
